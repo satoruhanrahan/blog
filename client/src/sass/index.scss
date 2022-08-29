@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#wallpaper-div{
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  #wallpaper-text-large{
+    color: white;
+    z-index: 0;
+    margin-left: 33%;
+    padding-top: 80px;
+    font-weight: 500;
+    font-size: 4rem;
+  }
+
+  #wallpaper-text-small{
+    color: white;
+    z-index: 1;
+    margin-left: 38%;
+    padding-top: 15px;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+}
+
+#content{
+  margin-left: 10%;
+  margin-right: 10%;
+
+  #nav-bar{
+    width: 100%;
+    height: 30px;
+    border-bottom: solid 1px #A1A1A1;
+  }
+
+  .nav-link{
+    width: fit-content;
+    float: left;
+    margin-right: 40px;
+    color: #707070;
+    text-decoration: none;
+  }
+  
+  .nav-link.-active, .nav-link:hover{
+    color: black;
+  }
+
+  .post-lrg{
+    width: 100%;
+
+    .post-img{
+      margin-top: 40px;
+      width: 32%;
+      float: left;
+    }
+    
+    .post-title{
+      float: left;
+      margin-top: 70px;
+      margin-left: 5%;
+      color: #212121;
+      width: 63%;
+    }
+    
+    .post-text{
+      float: left;
+      margin-left: 5%;
+      color: #212121;
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 63%;
+    }
+    
+    .post-date{
+      color: #585858;
+      font-size: small;
+      float: left;
+      margin-left: 5%;
+      margin-top: 10px;
+      width: 63%;
+    }
+  }
+  
+  .section-header{
+    color: #707070;
+    margin-top: 50px;
+    float: left;
+    width: 100%;
+    border-bottom: solid 1px #A1A1A1;
+    padding-bottom: 5px;
+  }
+
+  .post-sml{
+    float: left;
+    width: 28%;
+    margin-right: 50px;
+
+    a{
+      text-decoration: none;
+    }
+
+    .post-img{
+      width: 100%;
+      margin-top: 40px;
+      float: left;
+      margin-bottom: 5px;
+    }
+    
+    .post-title{
+      color: #212121;
+      // width: 23%;
+      margin-bottom: 5px;
+    }
+    
+    .post-text{
+      color: #212121;
+      // width: 23%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    
+    .post-date{
+      color: #585858;
+      font-size: small;
+      margin-top: 0;
+    }
+  }
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #3498db;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
